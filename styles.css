@@ -1,0 +1,15 @@
+/*
+    Document   : styles.css
+    Created on : 2017-01-14 10:41 PM
+    Author     : tpeterson
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,900');
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+root {
+    display: block;
+}
