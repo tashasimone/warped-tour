@@ -86,12 +86,13 @@ header {
     width: 100%;
     background-image: url(images/crowd.png);
     background-size: 100%;
-    background-position: bottom;
+    background-position: center;
     height: 180px;
 }
 .hook {
     font-size: 1.7em;
     line-height: 25px;    
+    margin-top: 5px;
 }
 h1 {
     font-size: 2.3em;
@@ -138,8 +139,28 @@ root {
     .bands li:last-child {
         display: block;
     }
+    .bands, .end {
+        background-size: 100%;
+    }
     .button {
         margin: 20px 0 0 0;
+    }
+    header {
+        background-size: 100%;
+        background-position: center;
+        height: 220px;
+    }
+    .hook {
+        margin-top: 5px;
+    }
+    h1 {
+        font-size: 3.7em;
+    }
+    h2 {
+        padding-top: 36px;
+    }
+    .lead, .bands, .charities {
+        padding-bottom: 26px;
     }
     .lead {
         display: flex;
@@ -156,8 +177,24 @@ root {
     }
 }
 @media screen and (min-width: 1200px) {
-    
+    .bands ul {
+        display: flex;
+        flex-flow: nowrap;
+        justify-content: space-around;
+    }
+    .bands li {
+        width: 21%;
+        box-sizing: border-box;        
+    }
+    header {
+        height: 460px;
+    }
+    h1 {        
+        padding: 13% 0 0 0;
+    }
 }
-@media screen and (min-width: 1920px) {
-    
+@media screen and (min-width: 1920px) {    
+    h1 {        
+        padding: 9% 0 0 0;
+    }
 }
