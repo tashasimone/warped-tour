@@ -62,9 +62,16 @@ body {
     width: 87.5%;
     margin: 0 auto 27px auto;
 }
+.charities h2 {
+    padding-bottom: 15px;
+}
 .charities ul {
     list-style: disc;
     padding-left: 20px;
+}
+.copyright {
+    margin: 20px auto;
+    max-width: 560px;
 }
 .end {
     padding-bottom: 50px;
@@ -186,15 +193,44 @@ root {
         width: 21%;
         box-sizing: border-box;        
     }
+    .charities {
+        max-width: 63%;
+    }
     header {
         height: 460px;
     }
     h1 {        
         padding: 13% 0 0 0;
     }
+    h2 {
+        padding: 36px 0;
+    }
+    .lead {
+        max-width: 80%;
+    }
 }
 @media screen and (min-width: 1920px) {    
+    .bands, .end {
+        max-width: 1990px;
+        margin: 0 auto;
+    }
+    .bands, .charities {
+        padding: 30px 0;
+    }
+    .charities {
+        max-width: 50%;
+    }
     h1 {        
         padding: 9% 0 0 0;
+    }
+    .lead {
+        max-width: 63%;
+    }
+    .lead p {
+        max-width: 800px;
+    }
+    .logo {
+        max-height: 500px;
+        max-width: 600px;
     }
 }
