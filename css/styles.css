@@ -1,0 +1,287 @@
+/*
+    Document   : styles.css
+    Created on : 2017-01-14 10:41 PM
+    Author     : tpeterson
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+
+what should i do about the background image continuing from end hook to footer? move the copy
+statement into the "end" div? change my design?
+
+*/
+@import url(meyer-reset.css);
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,900");
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.band {
+  padding-bottom: 36px;
+}
+
+.band img {
+  width: 56%;
+  display: block;
+  margin: 0 auto;
+}
+
+.bands, .end {
+  background-image: url(../images/triangle-pattern.png);
+  background-size: 200%;
+}
+
+.bands li:last-child {
+  display: none;
+}
+
+.band-name {
+  font-size: 1.4em;
+  text-align: center;
+  line-height: 20px;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 62.5%;
+  margin: 0 auto;
+}
+
+.button {
+  width: 138px;
+  height: 40px;
+  border: 1px solid #979797;
+  text-align: center;
+  padding-top: 8px;
+  box-sizing: border-box;
+  margin: 20px auto 0 auto;
+}
+
+.charities, .lead {
+  width: 87.5%;
+  margin: 0 auto 27px auto;
+}
+
+.charities h2 {
+  padding-bottom: 15px;
+}
+
+.charities ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.copyright {
+  margin: 20px auto;
+  max-width: 560px;
+}
+
+.end {
+  padding-bottom: 50px;
+}
+
+.end img, .end p {
+  width: 280px;
+  margin: 0 auto;
+  display: block;
+  padding-top: 20px;
+}
+
+footer {
+  width: 75%;
+  text-align: center;
+  line-height: 20px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  width: 100%;
+  background-image: url(../images/crowd.png);
+  background-size: 100%;
+  background-position: center;
+  height: 180px;
+}
+
+.hook {
+  font-size: 1.7em;
+  line-height: 25px;
+  margin-top: 5px;
+}
+
+h1 {
+  font-size: 2.3em;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 55px;
+}
+
+h2 {
+  font-size: 2.3em;
+  text-align: center;
+  line-height: 27px;
+  padding: 26px 0 20px 0;
+}
+
+.logo {
+  display: none;
+}
+
+p {
+  font-size: 1.4em;
+  line-height: 20px;
+  margin-top: 14px;
+}
+
+root {
+  display: block;
+}
+
+.tagline {
+  font-size: 1.7em;
+  line-height: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .band img {
+    width: 100%;
+  }
+
+  .bands ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .bands li {
+    width: 34%;
+    box-sizing: border-box;
+  }
+
+  .bands li:last-child {
+    display: block;
+  }
+
+  .bands, .end {
+    background-size: 100%;
+  }
+
+  .button {
+    margin: 20px 0 0 0;
+  }
+
+  header {
+    background-size: 100%;
+    background-position: center;
+    height: 220px;
+  }
+
+  .hook {
+    margin-top: 5px;
+  }
+
+  h1 {
+    font-size: 3.7em;
+  }
+
+  h2 {
+    padding-top: 36px;
+  }
+
+  .lead, .bands, .charities {
+    padding-bottom: 26px;
+  }
+
+  .lead {
+    display: flex;
+    margin-top: 40px;
+  }
+
+  .lead .col {
+    flex: 1;
+    margin: 0 10px;
+  }
+
+  .logo {
+    display: block;
+    width: 44%;
+    height: 20%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .bands ul {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-around;
+  }
+
+  .bands li {
+    width: 21%;
+    box-sizing: border-box;
+  }
+
+  .charities {
+    max-width: 63%;
+  }
+
+  header {
+    height: 460px;
+  }
+
+  h1 {
+    padding: 13% 0 0 0;
+  }
+
+  h2 {
+    padding: 36px 0;
+  }
+
+  .lead {
+    max-width: 80%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .bands, .end {
+    max-width: 1990px;
+    margin: 0 auto;
+  }
+
+  .bands, .charities {
+    padding: 30px 0;
+  }
+
+  .charities {
+    max-width: 50%;
+  }
+
+  h1 {
+    padding: 9% 0 0 0;
+  }
+
+  .lead {
+    max-width: 63%;
+  }
+
+  .lead p {
+    max-width: 800px;
+  }
+
+  .logo {
+    max-height: 500px;
+    max-width: 600px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
