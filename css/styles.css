@@ -123,7 +123,7 @@ a:hover {
   text-decoration: underline;
   color: #000000;
 }
-as:visited {
+a:visited {
   text-decoration: none;
   color: #000000;
 }
