@@ -262,13 +262,14 @@ p {
   .bands {
     padding: 30px 0;
     max-width: 1990px;
+    display: block;
     margin: 0 auto;
   }
 }
 
 .band-name {
-  font-size: 1.4em;
   text-align: center;
+  font-size: 1.4em;
   line-height: 20px;
 }
 
@@ -327,8 +328,8 @@ p {
 }
 .end img, .end p {
   width: 280px;
-  margin: 0 auto;
   display: block;
+  margin: 0 auto;
   padding-top: 20px;
 }
 @media screen and (min-width: 768px) {
@@ -339,6 +340,7 @@ p {
 @media screen and (min-width: 1920px) {
   .end {
     max-width: 1990px;
+    display: block;
     margin: 0 auto;
   }
 }
@@ -347,11 +349,6 @@ p {
   font-size: 1.7em;
   line-height: 25px;
   margin-top: 5px;
-}
-@media screen and (min-width: 768px) {
-  .hook {
-    margin-top: 5px;
-  }
 }
 
 .lead {
@@ -402,8 +399,8 @@ p {
 }
 @media screen and (min-width: 1920px) {
   .logo {
-    max-height: 500px;
     max-width: 600px;
+    max-height: 500px;
   }
 }
 

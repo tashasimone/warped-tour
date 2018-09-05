@@ -8,13 +8,13 @@
 @import 'meyer-reset';
 @import 'elements';
 @import 'vars';
+@import 'mixins';
 
 .band {
     padding-bottom: 36px;
     img {
         width: 56%;
-        display: block;
-        margin: 0 auto;
+        @include center-block();
         @media screen and (min-width: 768px) {
             width: 100%;
         }
@@ -37,9 +37,7 @@
             display: block;
         }
         ul {            
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-around;
+            @include flex-setup(row wrap, space-around);
         }
     }
     @media screen and (min-width: 1200px) {
@@ -48,25 +46,21 @@
             box-sizing: border-box;        
         }
         ul {
-            display: flex;
-            flex-flow: nowrap;
-            justify-content: space-around;
+            @include flex-setup(nowrap, space-around);
         }
     }
     @media screen and (min-width: 1920px) {    
         padding: 30px 0;
         max-width: 1990px;
-        margin: 0 auto;
+        @include center-block();
     }
 }
 .band-name {
-    font-size: 1.4em;
     text-align: center;
-    line-height: 20px;
+    @include font-size-height(1.4em, 20px);
 }
 .button {
-    width: 138px;
-    height: 40px;
+    @include width-height(138px, 40px);
     border: 1px solid $color-button-border;
     text-align: center;
     padding-top: 8px;
@@ -107,8 +101,7 @@
     background-size: 200%;
     img, p {
         width: 280px;
-        margin: 0 auto;
-        display: block;
+        @include center-block();
         padding-top: 20px;
     }
     @media screen and (min-width: 768px) {
@@ -116,16 +109,12 @@
     }
     @media screen and (min-width: 1920px) {    
         max-width: 1990px;
-        margin: 0 auto;
+        @include center-block();
     }
 }
 .hook {
-    font-size: 1.7em;
-    line-height: 25px;    
+    @include font-size-height(1.7em, 25px);  
     margin-top: 5px;
-    @media screen and (min-width: 768px) {
-        margin-top: 5px;
-    }
 }
 .lead {
     width: 87.5%;
@@ -160,18 +149,15 @@
     display: none;
     @media screen and (min-width: 768px) {
         display: block;
-        width: 44%;
-        height: 20%;
+        @include width-height(44%, 20%);
     }
     @media screen and (min-width: 1920px) {   
-        max-height: 500px;
-        max-width: 600px;
+        @include width-height-max(600px, 500px);
     }
 }
 root {
     display: block;
 }
 .tagline {
-    font-size: 1.7em;
-    line-height: 20px;
+    @include font-size-height(1.7em, 20px);
 }
