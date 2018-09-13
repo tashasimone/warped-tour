@@ -1,0 +1,22 @@
+@mixin center-block() {
+    display: block;
+    margin: 0 auto;
+}
+@mixin flex-setup($flex-flow, $justify-content) {
+    display: flex;
+    flex-flow: $flex-flow;
+    justify-content: $justify-content;
+}
+@mixin font-size-height($size, $line-height) {
+    font-size: $size;
+    line-height: $line-height;
+}
+
+@mixin width-height($width, $height) {
+    width: $width;
+    height: $height;
+}
+@mixin width-height-max($width, $height) {
+    max-width: $width;
+    max-height: $height;
+}

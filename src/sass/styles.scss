@@ -1,0 +1,163 @@
+/*
+    Document   : styles.css
+    Created on : 2017-01-14 10:41 PM
+    Author     : tpeterson
+    Description:
+
+*/
+@import 'meyer-reset';
+@import 'elements';
+@import 'vars';
+@import 'mixins';
+
+.band {
+    padding-bottom: 36px;
+    img {
+        width: 56%;
+        @include center-block();
+        @media screen and (min-width: 768px) {
+            width: 100%;
+        }
+    }
+}
+.bands {
+    background-image: url(../images/triangle-pattern.png);
+    background-size: 200%;
+    li:last-child {
+        display: none;
+    }
+    @media screen and (min-width: 768px){
+        background-size: 100%;
+        padding-bottom: 26px;
+        li {
+            width: 34%;
+            box-sizing: border-box;        
+        }
+        li:last-child {
+            display: block;
+        }
+        ul {            
+            @include flex-setup(row wrap, space-around);
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        li {
+            width: 21%;
+            box-sizing: border-box;        
+        }
+        ul {
+            @include flex-setup(nowrap, space-around);
+        }
+    }
+    @media screen and (min-width: 1920px) {    
+        padding: 30px 0;
+        max-width: 1990px;
+        @include center-block();
+    }
+}
+.band-name {
+    text-align: center;
+    @include font-size-height(1.4em, 20px);
+}
+.button {
+    @include width-height(138px, 40px);
+    border: 1px solid $color-button-border;
+    text-align: center;
+    padding-top: 8px;
+    box-sizing: border-box;
+    margin: 20px auto 0 auto;
+    @media screen and (min-width: 768px) {
+        margin: 20px 0 0 0;
+    }
+}
+.charities {
+    width: 87.5%;
+    margin: 0 auto 27px auto;
+    h2 {
+        padding-bottom: 15px;
+    }
+    ul {
+        list-style: disc;
+        padding-left: 20px;
+    }
+    @media screen and (min-width: 768px) {
+        padding-bottom: 26px;
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 63%;
+    }
+    @media screen and (min-width: 1920px) {   
+        max-width: 50%;
+        padding: 30px 0;
+    }
+}
+.copyright {
+    margin: 20px auto;
+    max-width: 560px;
+}
+.end {
+    padding-bottom: 50px;
+    background-image: url(../images/triangle-pattern.png);
+    background-size: 200%;
+    img, p {
+        width: 280px;
+        @include center-block();
+        padding-top: 20px;
+    }
+    @media screen and (min-width: 768px) {
+        background-size: 100%;
+    }
+    @media screen and (min-width: 1920px) {    
+        max-width: 1990px;
+        @include center-block();
+    }
+}
+.hook {
+    @include font-size-height(1.7em, 25px);  
+    margin-top: 5px;
+}
+.lead {
+    width: 87.5%;
+    margin: 0 auto 27px auto;
+    h2 {
+        padding-bottom: 15px;
+    }
+    ul {
+        list-style: disc;
+        padding-left: 20px;
+    }
+    @media screen and (min-width: 768px) {
+        padding-bottom: 26px;
+        display: flex;
+        margin-top: 40px;
+        .col {
+            flex: 1;
+            margin: 0 10px;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 80%;
+    }
+    @media screen and (min-width: 1920px) { 
+        max-width: 63%;
+        p {
+            max-width: 800px;
+        }
+    }
+}
+.logo {
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: block;
+        @include width-height(44%, 20%);
+    }
+    @media screen and (min-width: 1920px) {   
+        @include width-height-max(600px, 500px);
+    }
+}
+root {
+    display: block;
+}
+.tagline {
+    @include font-size-height(1.7em, 20px);
+}

@@ -1,0 +1,416 @@
+/*
+    Document   : styles.css
+    Created on : 2017-01-14 10:41 PM
+    Author     : tpeterson
+    Description:
+
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,900");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,900");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+a:hover {
+  text-decoration: underline;
+  color: #000000;
+}
+a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 62.5%;
+  margin: 0 auto;
+}
+
+footer {
+  width: 75%;
+  text-align: center;
+  line-height: 20px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  width: 100%;
+  background-image: url(../images/crowd.png);
+  background-size: 100%;
+  background-position: center;
+  height: 180px;
+}
+@media screen and (min-width: 768px) {
+  header {
+    background-size: 100%;
+    background-position: center;
+    height: 220px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header {
+    height: 460px;
+  }
+}
+
+h1 {
+  font-size: 2.3em;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 55px;
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 3.7em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h1 {
+    padding: 13% 0 0 0;
+  }
+}
+@media screen and (min-width: 1920px) {
+  h1 {
+    padding: 9% 0 0 0;
+  }
+}
+
+h2 {
+  font-size: 2.3em;
+  text-align: center;
+  line-height: 27px;
+  padding: 26px 0 20px 0;
+}
+@media screen and (min-width: 768px) {
+  h2 {
+    padding-top: 36px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h2 {
+    padding: 36px 0;
+  }
+}
+
+p {
+  font-size: 1.4em;
+  line-height: 20px;
+  margin-top: 14px;
+}
+
+.band {
+  padding-bottom: 36px;
+}
+.band img {
+  width: 56%;
+  display: block;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .band img {
+    width: 100%;
+  }
+}
+
+.bands {
+  background-image: url(../images/triangle-pattern.png);
+  background-size: 200%;
+}
+.bands li:last-child {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .bands {
+    background-size: 100%;
+    padding-bottom: 26px;
+  }
+  .bands li {
+    width: 34%;
+    box-sizing: border-box;
+  }
+  .bands li:last-child {
+    display: block;
+  }
+  .bands ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .bands li {
+    width: 21%;
+    box-sizing: border-box;
+  }
+  .bands ul {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .bands {
+    padding: 30px 0;
+    max-width: 1990px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.band-name {
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 20px;
+}
+
+.button {
+  width: 138px;
+  height: 40px;
+  border: 1px solid #979797;
+  text-align: center;
+  padding-top: 8px;
+  box-sizing: border-box;
+  margin: 20px auto 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .button {
+    margin: 20px 0 0 0;
+  }
+}
+
+.charities {
+  width: 87.5%;
+  margin: 0 auto 27px auto;
+}
+.charities h2 {
+  padding-bottom: 15px;
+}
+.charities ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+@media screen and (min-width: 768px) {
+  .charities {
+    padding-bottom: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .charities {
+    max-width: 63%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .charities {
+    max-width: 50%;
+    padding: 30px 0;
+  }
+}
+
+.copyright {
+  margin: 20px auto;
+  max-width: 560px;
+}
+
+.end {
+  padding-bottom: 50px;
+  background-image: url(../images/triangle-pattern.png);
+  background-size: 200%;
+}
+.end img, .end p {
+  width: 280px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .end {
+    background-size: 100%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .end {
+    max-width: 1990px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.hook {
+  font-size: 1.7em;
+  line-height: 25px;
+  margin-top: 5px;
+}
+
+.lead {
+  width: 87.5%;
+  margin: 0 auto 27px auto;
+}
+.lead h2 {
+  padding-bottom: 15px;
+}
+.lead ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+@media screen and (min-width: 768px) {
+  .lead {
+    padding-bottom: 26px;
+    display: flex;
+    margin-top: 40px;
+  }
+  .lead .col {
+    flex: 1;
+    margin: 0 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .lead {
+    max-width: 80%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .lead {
+    max-width: 63%;
+  }
+  .lead p {
+    max-width: 800px;
+  }
+}
+
+.logo {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    display: block;
+    width: 44%;
+    height: 20%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .logo {
+    max-width: 600px;
+    max-height: 500px;
+  }
+}
+
+root {
+  display: block;
+}
+
+.tagline {
+  font-size: 1.7em;
+  line-height: 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */
